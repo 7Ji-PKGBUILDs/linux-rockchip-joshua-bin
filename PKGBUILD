@@ -48,8 +48,8 @@ _package() {
 
   install -dm755 "$pkgdir/boot"
 
-  mkdir -p "${pkgdir}/boot/dtbs/${_pkgbase}/rockchip/$_pkgbase"
-  cp -r usr/lib/linux-image-${_pkgver}-rockchip/rockchip/* "${pkgdir}/boot/dtbs/${_pkgbase}/rockchip/$_pkgbase"
+  mkdir -p "${pkgdir}/boot/dtbs/${_pkgbase}/rockchip"
+  cp -r usr/lib/linux-image-${_pkgver}-rockchip/rockchip/* "${pkgdir}/boot/dtbs/${_pkgbase}/rockchip"
 
   cp -r boot/vmlinuz-$_kernver "$pkgdir/boot/vmlinuz-$_pkgbase"
 
